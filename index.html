@@ -12,11 +12,11 @@
 <body>
 <div id="app">
     <header>
-        Logo
+        <img class="logo" src="https://www.geekslab.it/wp-content/uploads/2019/03/logo-spotify.png" alt="">
     </header>
     <main>
         <div class="card" v-for="disco in dischi">
-            <img src="disco.poster" alt="">
+            <img :src="disco.poster" alt="">
             <h3>{{ disco.title }}</h3>
             <p>{{ disco.author }}</p>
             <h4>{{ disco.year }}</h4>
