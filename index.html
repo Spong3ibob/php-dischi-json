@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Dischi</title>
+</head>
+<body>
+<div id="app">
+    <header>
+        Logo
+    </header>
+    <main>
+        <div class="card" v-for="disco in dischi">
+            <img src="disco.poster" alt="">
+            <h3>{{ disco.title }}</h3>
+            <p>{{ disco.author }}</p>
+            <h4>{{ disco.year }}</h4>
+        </div>
+    </main>
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
